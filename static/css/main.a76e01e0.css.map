@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.a76e01e0.css","mappings":"2EACA,KAEE,eAAe,CADf,8BAEF","sources":["index.css"],"sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Galindo&display=swap');\nbody {\n  font-family: \"Galindo\", sans-serif;\n  background:pink;\n}"],"names":[],"sourceRoot":""}
