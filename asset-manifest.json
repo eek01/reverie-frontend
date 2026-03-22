@@ -1,13 +1,36 @@
 {
   "files": {
-    "main.css": "/reverie-frontend/static/css/main.002c145a.css",
-    "main.js": "/reverie-frontend/static/js/main.22130091.js",
+    "main.css": "/reverie-frontend/static/css/main.16a6389f.css",
+    "main.js": "/reverie-frontend/static/js/main.eaaa76e9.js",
+    "static/media/reverie5.jpg": "/reverie-frontend/static/media/reverie5.a8c56c7e8ca5f39dcf19.jpg",
+    "static/media/pinkPuffer.png": "/reverie-frontend/static/media/pinkPuffer.84aa12da3cb17b334f2e.png",
+    "static/media/reverie1.png": "/reverie-frontend/static/media/reverie1.060a4a617af161f06592.png",
+    "static/media/reverie13.png": "/reverie-frontend/static/media/reverie13.fc5f224d865d65ba31a1.png",
+    "static/media/nonprofit.jpg": "/reverie-frontend/static/media/nonprofit.7a9db463d9d8847764d5.jpg",
+    "static/media/reverie11_cropped.png": "/reverie-frontend/static/media/reverie11_cropped.13c7bb1527f08db30b56.png",
+    "static/media/reverie16_cropped.png": "/reverie-frontend/static/media/reverie16_cropped.3bfb646acb4de0c73e38.png",
+    "static/media/impact-bg.jpg": "/reverie-frontend/static/media/impact-bg.0cccbbbf398919243af6.jpg",
+    "static/media/reverie15_cropped.png": "/reverie-frontend/static/media/reverie15_cropped.be60d380e78a2670dd0e.png",
+    "static/media/reverie3.jpg": "/reverie-frontend/static/media/reverie3.643692c94d746971e211.jpg",
+    "static/media/natureCons.jpg": "/reverie-frontend/static/media/natureCons.df7cfb46718b4dc307bf.jpg",
+    "static/media/reverie2_cropped.jpg": "/reverie-frontend/static/media/reverie2_cropped.5241a33e45d8b9ea664e.jpg",
+    "static/media/habitat4humanity.jpg": "/reverie-frontend/static/media/habitat4humanity.3ece0852f4f314f219d2.jpg",
+    "static/media/reverie2.jpg": "/reverie-frontend/static/media/reverie2.98e8d48236011d7423b3.jpg",
+    "static/media/reverie5_cropped.jpg": "/reverie-frontend/static/media/reverie5_cropped.33a04b13add78fed238c.jpg",
+    "static/media/350.jpg": "/reverie-frontend/static/media/350.c6d4d33fedf3ba79c8ab.jpg",
+    "static/media/reverie9.jpg": "/reverie-frontend/static/media/reverie9.85b96db3bdb4e7b3592a.jpg",
+    "static/media/mens1.jpg": "/reverie-frontend/static/media/mens1.93056af095ccdc1109a6.jpg",
+    "static/media/reverie7.jpg": "/reverie-frontend/static/media/reverie7.d94a06bd743db3dab907.jpg",
+    "static/media/mens3_cropped.jpg": "/reverie-frontend/static/media/mens3_cropped.cd7457cac4e8e5e8f667.jpg",
+    "static/media/treesForTheFuture.jpg": "/reverie-frontend/static/media/treesForTheFuture.94468c98e4a2845c637a.jpg",
+    "static/media/flower200px.png": "/reverie-frontend/static/media/flower200px.f3d5b49a622e2551e49e.png",
+    "static/media/ReverieDaydreamLogoResize.png": "/reverie-frontend/static/media/ReverieDaydreamLogoResize.050fe7b0b57c3b0a963e.png",
     "index.html": "/reverie-frontend/index.html",
-    "main.002c145a.css.map": "/reverie-frontend/static/css/main.002c145a.css.map",
-    "main.22130091.js.map": "/reverie-frontend/static/js/main.22130091.js.map"
+    "main.16a6389f.css.map": "/reverie-frontend/static/css/main.16a6389f.css.map",
+    "main.eaaa76e9.js.map": "/reverie-frontend/static/js/main.eaaa76e9.js.map"
   },
   "entrypoints": [
-    "static/css/main.002c145a.css",
-    "static/js/main.22130091.js"
+    "static/css/main.16a6389f.css",
+    "static/js/main.eaaa76e9.js"
   ]
 }
