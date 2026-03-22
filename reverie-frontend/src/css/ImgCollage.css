@@ -21,7 +21,7 @@
     --row-height: 400px;
     
     box-sizing: border-box;
-    padding: --gap;
+    padding: var(--gap);
 
     display: grid;
     grid-template-columns: repeat(var(--num-cols), 1fr);
