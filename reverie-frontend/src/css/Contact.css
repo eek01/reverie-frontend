@@ -1,0 +1,27 @@
+/*typography*/
+#contact {
+    padding:0px 50px 50px 50px;
+}
+.contact-txt label {
+    display: block;
+    color:var(--shop-txt);
+}
+.contact-txt input, .contact-txt textarea {
+    width:100%;
+    padding:0;
+}
+.contact-txt {
+    margin: 10px;
+}
+
+/*Button*/
+#contact-btn {
+    font-family: "Galindo", sans-serif;
+    color:var(--border);
+    margin:20px 0px 10px 10px;
+    background:var(--footer-txt);
+    border:3px solid var(--border);
+    border-radius: 10px;
+    float: right;
+    
+}

@@ -1,0 +1,19 @@
+/*structure*/
+#home-content {
+    margin: 0;
+    background: var(--home);
+}
+#home-shop {
+    display: flex;
+    background: var(--main-header);
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    position: relative;
+}
+
+/*navigation*/
+#home-shop a {
+    text-decoration: none;
+    color: var(--shop-txt);
+}

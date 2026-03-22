@@ -1,0 +1,87 @@
+
+
+
+/*Structure*/
+#shopping-search {
+    border-bottom: 1px solid var(--border);
+}
+
+/*typography*/
+#womens-search-sort {
+    color: var(--border);
+}
+#mens-content #womens-search-sort {
+    color: var(--mens);
+}
+
+/*navigation*/
+#shopping-search {
+    display: flex;
+    justify-content: space-between;
+}
+#womens-search-drop ul {
+    padding-left: 0;
+}
+#womens-search-drop li {
+    padding: 20px;
+    list-style-type: none;
+    color: var(--border);
+}
+#mens-content #womens-search-drop li {
+    color: var(--mens);
+}
+#toggle-search div {
+    width: 25px;
+    height:2px;
+    background-color: var(--footer);
+    margin:6px 0;
+}
+#toggle-search div {
+    width: 25px;
+    height:2px;
+    background-color: var(--shop-txt);
+    margin:6px 0;
+}
+#womens-search-sort {
+    display: flex;
+    align-items: center;
+    margin:10px;
+}
+#womens-search-sort-bar {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--shop-txt);
+    width: 150px;
+    padding:0 10px;
+    margin: 5px;
+}
+#mens-content #womens-search-sort-bar {
+    border: 1px solid var(--mens);
+}
+#womens-search-sort-bar:hover {
+    cursor: pointer;
+}
+
+/*button*/
+#womens-search-sort-btn {
+    display: flex;
+    align-items: center;
+}
+#womens-search-sort-btn button{
+    background: none;
+    border: none;
+    color: var(--border)
+}
+#mens-content #womens-search-sort-btn button {
+    color: var(--mens);
+}
+
+/*larger devices*/
+@media (min-width: 1024px) {
+    nav ul, #womens-search-drop ul {
+        display:flex;
+    }
+    #toggle-search {
+        display: none;
+    }
+}

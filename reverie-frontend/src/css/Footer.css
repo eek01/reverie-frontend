@@ -1,0 +1,44 @@
+/*Structure*/
+#main-footer {
+    background: var(--footer);
+    padding-bottom: 2px;
+    padding-top: 20px;
+}
+#main-footer-content {
+    width: 50%;
+    margin: auto;
+    padding-left:150px;
+}
+#main-footer-content div {
+    margin: auto; 
+}
+
+/*Typography*/
+#main-footer {
+    text-align: center;
+    color: var(--footer-txt);
+}
+#mission {
+    flex-wrap: wrap;
+}
+#mission h3, #connected h3 {
+    margin: 0;
+}
+#mission, #connected {
+    padding: 10px;
+}
+div#connected {
+    margin: 0px;
+}
+
+/*images*/
+#connected img {
+    padding: 2px;
+}
+
+/*Larger screens*/
+@media (min-width: 1024px) {
+    #main-footer {
+        text-align: left;
+    }
+}

@@ -1,0 +1,102 @@
+/*Structure*/
+#shop-sale {
+    border-bottom: 1px solid var(--border);
+}
+
+/*Typography*/
+#shop-sale-txt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--footer);
+    width: 100%;
+}
+#shop-sale-txt h1 {
+    margin: 0;
+    color: var(--womens);
+    font-size: 42px;
+}
+#sale-content-wrapper{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 100px;
+}
+
+/*images*/
+#shop-sale-img img {
+    margin-bottom: -7px;
+    padding: 0;
+}
+#sale-flower2 {
+    position: absolute;
+    left: 5%;
+    top:30%;
+}
+
+/*button*/
+#shop-sale-txt button {
+    font-family: "Galindo", sans-serif;
+    background: var(--home);
+    color: var(--footer);
+    font-size: xx-large;
+    border: 2px solid var(--footer);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px 30px;
+}
+#shop-sale-txt button:hover {
+    background: var(--footer);
+    color: var(--home);
+    border: 2px solid var(--home);
+}
+
+/*larger devices*/
+@media (min-width: 1024px) {
+        /*IMAGES*/
+    #sale-flower1 {
+        position: absolute;
+        left:-10%;
+        top:1%;
+    }
+    #sale-flower2{
+        position: absolute;
+        left:10%;
+        top:-7%;
+    }
+    #sale-flower3 {
+        position: absolute;
+        left: 10%;
+        top:34%;
+    }
+    #sale-flower4{
+        position: absolute;
+        left:5%;
+        top:5%;
+    }
+    #sale-flower5 {
+        position: absolute;
+        left:5%;
+        top:45%;
+    }
+    #sale-flower6{
+        position: absolute;
+        right:-5%;
+        top:45%;
+    }
+    #sale-flower7{
+        position: absolute;
+        right:20%;
+        top:65%;
+    }
+    #sale-flower8 {
+        position: absolute;
+        right:20%;
+        top:66%;
+    }
+    #sale-flower9{
+        position: absolute;
+        right:15%;
+        top:50%;  
+    }
+}

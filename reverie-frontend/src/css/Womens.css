@@ -1,0 +1,45 @@
+/*
+id="bottom-search-sort-btn
+
+*/
+
+/*structure*/
+#womens {
+    margin: 0;
+    background: var(--womens);
+    border-bottom: 1px solid var(--border);
+}
+#womens-shop {
+    display: flex;
+    background: var(--main-header);
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    position: relative;
+}
+#womens-shop-container {
+    background: var(--womens);
+    padding: 75px;
+}
+
+/*navigation*/
+#womens-shop a {
+    text-decoration: none;
+    color: var(--shop-txt);
+}
+
+/*button*/
+#bottom-search-sort-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 10px;
+    right: 10px;
+    color: var(--shop-txt);
+}
+#bottom-search-sort-btn button{
+    background: none;
+    border: none;
+    color: var(--border)
+}
+

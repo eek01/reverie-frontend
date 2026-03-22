@@ -1,3 +1,37 @@
-#main-header {
-    background: lightpink;
+/*Structure*/
+header {
+    width: 100%;
+    background:var(--main-header);
+    display: block;
+    text-align: center;
+    margin: 0;
+    border-bottom: 1px solid var(--border);
+}
+#title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+/*typography*/
+header h1 {
+    color: var(--footer);
+    display: flex;
+    align-items: center;
+}
+#title h1 {
+    padding-left: 20px;
+}
+
+@media (min-width: 1024px) {
+    header {
+        /*background: var(--main-header);*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+    }
+    header h1 {
+        font-size: 48px;
+    }
 }

@@ -1,11 +1,11 @@
+import "../css/FooterNav.css";
 import {Link} from "react-router-dom";
-import "../css/Navigation.css";
 
-const Navigation = () => {
+const FooterNav = () => {
     return (
-        <nav id="main-nav">
-            <ul className="columns">
-                <li><Link to="/">Home</Link></li>
+        <nav id="footer-nav-bottom" className="common-nav">
+            <ul>
+                <li><Link to="/">&copy; Reverie Daydream</Link></li>
                 <li><Link to="/womens">Womens</Link></li>
                 <li><Link to="/mens">Mens</Link></li>
                 <li><Link to="/decor">Decor</Link></li>
@@ -15,4 +15,4 @@ const Navigation = () => {
     );
 };
 
-export default Navigation;
+export default FooterNav;

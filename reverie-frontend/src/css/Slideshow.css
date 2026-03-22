@@ -1,0 +1,86 @@
+/*Structure*/
+#quick-shop-content {
+    width: 100%;
+}
+#quick-shop-content {
+    width: 90%;
+    margin: auto;
+}
+
+/*typogrpahy*/
+.text-block {
+    bottom: 24px;
+    left: 20px;
+    width: 100%;
+    position: absolute;
+    text-align: left;
+    background-color: var(--text-block);
+    color: var(--border);
+    margin-left: 25px;
+}
+.text-block h2, .text-block h3 {
+    padding: 0 20px;
+    margin: 0;
+}
+
+/*images*/
+.main-quick-shop-width {
+    flex: 0 0 33.333%;
+}
+.container img {
+    border-radius: 10px;
+    width: 100%;
+}
+.container {
+    position: relative;
+    padding:0;
+    width:80%;
+}
+.quick-shop-section {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.quick-shop-section img {
+    border-radius: 10px;
+    margin: 20px;
+    margin-left: 45px;
+}
+
+/*navigation*/
+.container a {
+    text-decoration: none;
+    color: var(--border)
+}
+
+
+/*button*/
+#quick-shop-content {
+    position: relative;
+}
+#main-quick-shop-left, #main-quick-shop-right {
+    font-family: "Galindo", sans-serif;
+    padding: 15px;
+    border:none;
+    border-radius: 10px;
+    background: var(--mens);
+    font-size: larger;
+    color: var(--footer);
+}
+#main-quick-shop-left:hover , #main-quick-shop-right:hover {
+    cursor: pointer;
+}
+#main-quick-shop-left {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    z-index: 2;
+}
+#main-quick-shop-right {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+}
+
+

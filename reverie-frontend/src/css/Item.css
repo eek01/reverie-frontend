@@ -1,0 +1,15 @@
+/*Stucture*/
+.shop-section {
+    margin: 30px;
+}
+
+/*images*/
+.shop-section img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*typography*/
+#shop-section-txt {
+    color: var(--shop-txt);
+}

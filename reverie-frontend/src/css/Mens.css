@@ -1,0 +1,88 @@
+/*structure*/
+#mens-content {
+    margin: 0;
+    background: var(--mens-main);
+}
+#shop-container {
+    padding: 75px;
+    border-bottom: 1px solid var(--border);
+}
+#shopping-search {
+    border-bottom: 1px solid var(--border);
+}
+#mens-shop {
+    display: flex;
+    background: var(--mens);
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    position: relative;
+}
+.shop-section {
+    margin: 30px;
+}
+
+/*typography*/
+#mens-content #mens-search-sort {
+    color: var(--mens);
+}
+
+/*Images*/
+.shop-section img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*navigation*/
+#mens-shop a {
+    text-decoration: none;
+    color: var(--shop-txt);
+}
+#mens-search-drop ul {
+    padding-left: 0;
+}
+#mens-search-drop li {
+    padding: 20px;
+    list-style-type: none;
+    color: var(--mens);
+}
+#mens-search-sort {
+    display: flex;
+    align-items: center;
+    margin:10px;
+}
+#mens-search-sort-bar {
+    display: flex;
+    justify-content: space-between;
+ border: 1px solid var(--mens);
+    width: 150px;
+    padding:0 10px;
+    margin: 5px;
+}
+#mens-search-sort-bar:hover {
+    cursor: pointer;
+}
+
+/*button*/
+#mens-search-sort-btn {
+    display: flex;
+    align-items: center;
+}
+#mens-search-sort-btn button{
+    background: none;
+    border: none;
+    color: var(--mens);
+}
+#bottom-search-sort-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 10px;
+    right: 10px;
+    color: var(--shop-txt);
+}
+#bottom-search-sort-btn button{
+    background: none;
+    border: none;
+    color: var(--border)
+}

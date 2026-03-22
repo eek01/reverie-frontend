@@ -1,0 +1,21 @@
+/*Structure*/
+#quick-shop {
+    background: var(--home);
+    border-bottom: 1px solid var(--border);
+}
+
+
+/*Typography*/
+#quick-shop h1 {
+    color: var(--footer);
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+/*larger devices*/
+@media (min-width: 1024px) {
+    #quick-shop h1 {
+        text-align: left;
+    }
+}

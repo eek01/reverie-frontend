@@ -1,0 +1,108 @@
+/*Structure*/
+#shop-mens-womens {
+    position: relative;
+    margin: 0;
+    background: var(--womens);
+    border-bottom: 1px solid var(--border);
+    padding: 45px;
+}
+#main-img-collage {
+    background: var(--main-header);
+    border-radius: 10px;
+}
+
+
+/*Images*/
+#main-img-collage-imgs {
+    position: relative;
+    padding: 25px;
+    --gap: 25px;
+    --num-cols: 5;
+    --row-height: 400px;
+    
+    box-sizing: border-box;
+    padding: --gap;
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+#main-img-collage-imgs img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main-img-collage-row-2 {
+    grid-row: span 2;
+}
+.main-img-collage-col-2 {
+    grid-column: span 2;
+}
+#img-collage-flower {
+    position: absolute;
+    bottom: -20px;
+    left:1px;
+}
+#img-collage-flower2 {
+    position: absolute;
+    bottom: -20px;
+    left:120px;
+}
+
+/*Button*/
+#main-shop-btns {
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+#main-shop-btns {
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+#main-shop-men:hover {
+  background-position: 0 0;
+}
+#main-shop-women:hover {
+  background-position: 100% 0;
+}
+#main-shop-men, #main-shop-women {
+    font-family: "Galindo", sans-serif;
+    padding: 20px;
+    background: var(--btn-background);
+    color: var(--main-header);
+    border-radius: 10px;
+    border: none;
+    font-size:larger;
+    width: 190px;
+}
+#main-shop-men {
+    cursor: pointer;
+    background: linear-gradient(90deg, var(--womens), var(--btn-background), var(--btn-background));
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position .5s;
+}
+#main-shop-women {
+    cursor: pointer;
+    background: linear-gradient(270deg, var(--womens), var(--btn-background), var(--btn-background));
+    background-size: 200% 100%;
+    background-position: 0 0%;
+    transition: background-position .5s;
+}
+
+/*Small Devices*/
+@media (max-width: 1024px) {
+    #main-img-collage-imgs {
+        --num-cols:2;
+        --row-height: 200px;
+    }
+} 

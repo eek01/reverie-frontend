@@ -1,0 +1,124 @@
+/*Structure*/
+#nonprofit-highlights {
+    position: relative;
+    background: var(--shop-txt);
+    width: 100%;
+}
+#volunteer {
+    background: var(--mens);
+}
+#volunteer-width {
+    width: 70%;
+    margin: auto;
+    padding:50px;
+}
+#volunteer-frame {
+    margin-right: 50px;
+}
+#volunteer-frame iframe{
+    max-width: 100%;
+    height:auto;
+    aspect-ratio: 16/9;
+}
+#contact-section {
+    background: var(--main-header);
+}
+#contact-section-width{
+    width: 70%;
+    margin: auto;
+    padding:50px;
+}
+
+
+/*navigation*/
+
+/*typography*/
+#volunteer-txt {
+    color: var(--shop-txt);
+}
+#nonprofit-txt {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color:var(--shop-txt);
+    background: var(--impact);
+}
+#nonprofit-highlights h1 {
+    color:var(--mens);
+    text-align: center;
+    margin: 0;
+    padding-top:30px;
+}
+#impact-title-txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--mens);
+}
+#impact-title-txt h1 {
+    font-size: 48px;
+}
+#nonprofit-txt {
+    padding: 0 50px 0 50px;
+    font-size: 20px;
+}
+.nonprofit-txt-block h3{
+    color: var(--mens);
+    padding-left:80px;
+    margin: 0 0 30px 0;
+}
+#contact-section-txt {
+    color: var(--shop-txt);
+    padding-left:50px;
+}
+#contact-section-txt h1{
+    margin-top: 0;
+}
+
+/*Images*/
+#impact-title img, #nonprofit img {
+    width: 100%;
+    display: block;
+}
+#impact-title {
+    position: relative;
+}
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--overlay);
+}  
+
+#nonprofit-highlight-img {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: space-evenly;
+    text-align: center;
+} 
+#nonprofit-highlight-img img {
+    border-radius: 10px;
+    margin: 20px;
+    margin-bottom: 0;
+}
+.nonprofit-width {
+    margin: 20px;
+}
+.nonprofit-container img {
+    border-radius: 10px;
+    margin: 20px;
+}
+.nonptofit-container {
+    position: relative;
+    padding:0;
+}
+
+/*button*/
+
+
+/*contact*/
