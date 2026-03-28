@@ -30,16 +30,22 @@
 #mens-content #womens-search-drop li {
     color: var(--mens);
 }
-#toggle-search div {
+/* #toggle-search div {
     width: 25px;
     height:2px;
     background-color: var(--footer);
     margin:6px 0;
-}
+} */
 #toggle-search div {
     width: 25px;
     height:2px;
     background-color: var(--shop-txt);
+    margin:6px 0;
+}
+#mens-content #toggle-search div {
+    width: 25px;
+    height:2px;
+    background-color: var(--mens);
     margin:6px 0;
 }
 #womens-search-sort {

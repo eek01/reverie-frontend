@@ -1,11 +1,12 @@
 import "../css/Impact.css";
 import Contact from "../components/Contact";
+import ImpactSlideshow from "../components/ImpactSlideshow";
 import nonprofit from "../images/impact-images/nonprofit.jpg";
 import impactImg from "../images/impact-images/impact-bg.jpg";
-import habitat4humanity from "../images/impact-images/habitat4humanity.jpg";
-import natureCons from "../images/impact-images/natureCons.jpg";
-import treesForTheFuture from "../images/impact-images/treesForTheFuture.jpg";
-import charity from "../images/impact-images/350.jpg";
+// import habitat4humanity from "../images/impact-images/habitat4humanity.jpg";
+// import natureCons from "../images/impact-images/natureCons.jpg";
+// import treesForTheFuture from "../images/impact-images/treesForTheFuture.jpg";
+// import charity from "../images/impact-images/350.jpg";
 
 const Impact = () => {
     return (
@@ -14,6 +15,7 @@ const Impact = () => {
                 <div id="overlay"></div>
                 <img src={impactImg}/>
                 <div id="impact-title-txt">
+                    {/* change font size on smaller screens... it looks wack rn */}
                     <h1>Our Impact</h1>
                     <h2>We aim to use the resources we have to aid, empower, and inspire the community.</h2>
                 </div>
@@ -21,7 +23,7 @@ const Impact = () => {
             <div id="volunteer">
                 <div id="volunteer-width" className="columns">
                     <div id="volunteer-frame" className="two">
-                        <iframe src="https://www.youtube.com/embed/4HwElAD1Aj8?si=Bhn4LJa0ul-S_kkz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/4HwElAD1Aj8?si=Bhn4LJa0ul-S_kkz" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                     </div>
                     <div id="volunteer-txt" className="one">
                         <h1>Volunteer Work</h1>
@@ -39,7 +41,8 @@ const Impact = () => {
                     <h1>We give 5% of every order to a nonprofit to support the community</h1>
                 </div>
             </div>
-            <div id="nonprofit-highlights">
+            <ImpactSlideshow />
+            {/* <div id="nonprofit-highlights">
                 <h1>Nonprofits</h1>
                     <button id="main-quick-shop-left">&lt;</button>
 
@@ -82,7 +85,7 @@ const Impact = () => {
                         </section>
                     </div>
                     <button id="main-quick-shop-right">&gt;</button>
-            </div>
+            </div> */}
             <div id="contact-section">
                 <div id="contact-section-width" className="columns">
                     <div id="contact-section-txt" className="one">

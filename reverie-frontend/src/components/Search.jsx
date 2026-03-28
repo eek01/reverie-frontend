@@ -1,16 +1,23 @@
 import "../css/Search.css";
-//need to add diff styling to mens
+import {useState} from "react";
 
 const Search = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+        console.log(menuOpen);
+    };
+
     return (
         <div id="shopping-search" className="columns">
             <div id="womens-search-drop">
-                <div id="toggle-search">
+                <div id="toggle-search" onClick={toggleMenu} href="#">
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
-                <ul id="search-bar-items" className="hide-small">
+                <ul id="search-bar-items" className={menuOpen?"columns":"hide-small"}>
                     <li>Size ⌄</li>
                     <li>Color ⌄</li>
                     <li>Price ⌄</li>

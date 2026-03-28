@@ -1,53 +1,83 @@
 import "../css/Slideshow.css";
 import {Link} from "react-router-dom";
-import reverie11 from "../images/main-images/reverie11_cropped.png";
-import reverie16 from "../images/main-images/reverie16_cropped.png";
-import reverie15 from "../images/main-images/reverie15_cropped.png";
-import reverie2Crop from "../images/main-images/reverie2_cropped.jpg";
-import mens3 from "../images/main-images/mens3_cropped.jpg";
-import reverie5 from "../images/main-images/reverie5_cropped.jpg";
+import { useState } from "react";
 
 const Slideshow = () => {
+    function importAll(r) {
+        return r.keys().map(r);
+    }
+
+    const imagesOne = importAll(
+        require.context("../images/shop-slideshow/one", false, /\.(png|jpe?g|svg)$/)
+    );
+    const imagesTwo = importAll(
+        require.context("../images/shop-slideshow/two", false, /\.(png|jpe?g|svg)$/)
+    );
+    const images = [imagesOne, imagesTwo];
+    // const images = importAll(
+    //     require.context("../images/shop-slideshow", false, /\.(png|jpe?g|svg)$/)
+    // );
+
+    const text = [[["Chunky Knit Sweater","$60"],["White Heeled Sandals","$49"],["Navy Windbreaker","$55"]], [["Stone-Wash Jeans","$79"],["White Sneakers","$99"],["Brown Button-Down","$28"]]];
+
+    const [index, setIndex] = useState(0);
+            
+
+    const slideForward = () => {
+        // if(slideIndex == imgs.length-1) {
+        //     setSlideIndex(0);
+        // } else {
+        //     setSlideIndex(slideIndex+1);
+        // }
+        // or
+        setIndex(index === images.length-1?0:index+1);
+        setIndex(index === text.length-1?0:index+1);
+    };
+
+    const slidePrev = () => {
+        setIndex(index === 0?images.length-1:index-1);
+        setIndex(index === 0?text.length-1:index-1);
+    };
+
     return (
         <div id="quick-shop-content">
-            <button id="main-quick-shop-left">&lt;</button>
+            <button id="main-quick-shop-left" onClick={slidePrev}>&lt;</button>
             <div id="main-quick-shop-imgs">
                 <section className="quick-shop-section columns">
                     <div className="main-quick-shop-width">
                         <div className="container">
-                            <Link to="/quick-shop">
-                            {/* ADD QUICKSHOP PAGE */}
-                                <img src={reverie11} alt="Woman pulling a sweater off over her head"/>
+                            <Link to="/shop">
+                                <img src={images[index][0]} alt={images[index]}/>
                                 <div className="text-block">
-                                    <h2>Chunky Knit Sweater</h2>
-                                    <h2>$60</h2>
+                                    <h2>{text[index][0][0]}</h2>
+                                    <h2>{text[index][0][1]}</h2>
                                 </div>
                             </Link>
                         </div>
                     </div>
                     <div className="main-quick-shop-width">
                         <div className="container">
-                            <img src={reverie16} alt="Image of man modeling a blue windbreaker"/>
+                            <img src={images[index][1]} alt="Image of man modeling a blue windbreaker"/>
                             <div className="text-block">
-                                <h2>Navy Windbreaker</h2>
-                                <h2>$55</h2>
+                                <h2>{text[index][1][0]}</h2>
+                                <h2>{text[index][1][1]}</h2>
                             </div>
                         </div>
                     </div>
                     <div className="main-quick-shop-width">
                         <div className="container">
-                            <img src={reverie15} alt="Image of a leg wearing a white sandal"/>
+                            <img src={images[index][2]} alt="Image of a leg wearing a white sandal"/>
                             <div className="text-block">
-                                <h2>White Heeled Sandals</h2>
-                                <h2>$49</h2>
+                                <h2>{text[index][2][0]}</h2>
+                                <h2>{text[index][2][1]}</h2>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section className="quick-shop-section hidden">
+                {/* <section className="quick-shop-section hidden">
                     <div className="main-quick-shop-width ">
                         <div className="container">
-                            <img src={reverie2Crop} alt="Zoomed image of a woman leaning over to tie her tennis show"/>
+                            <img src={images[index]} alt="Zoomed image of a woman leaning over to tie her tennis show"/>
                             <div className="text-block">
                                 <h2>White Sneakers</h2>
                                 <h3>$99</h3>
@@ -62,7 +92,7 @@ const Slideshow = () => {
                                 <h3>$28</h3>
                             </div>
                         </div>
-                    </div>  
+                    </div>
                     <div className="main-quick-shop-width ">
                         <div className="container">
                             <img src={mens3} alt="Zoomed image of a woman leaning over to tie her tennis show"/>
@@ -72,9 +102,9 @@ const Slideshow = () => {
                             </div>
                         </div>
                     </div>   
-                </section>
+                </section> */}
             </div>
-            <button id="main-quick-shop-right">&gt;</button>
+            <button id="main-quick-shop-right" onClick={slideForward}>&gt;</button>
         </div>
     );
 };
