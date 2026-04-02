@@ -1,0 +1,23 @@
+/*Structure*/
+#nonprofit-highlights {
+    position: relative;
+    background: var(--shop-txt);
+    width: 100%;
+}
+
+/* typography */
+#nonprofit-highlights h1 {
+    color:var(--mens);
+    text-align: center;
+    margin: 0;
+    padding-top:30px;
+}
+#nonprofit-txt {
+    padding: 0 50px 0 50px;
+    font-size: 20px;
+}
+.nonprofit-txt-block h3{
+    color: var(--mens);
+    padding-left:80px;
+    margin: 0 0 30px 0;
+}

@@ -7,7 +7,7 @@ const ShopInfo = (props) => {
     return (
         <div id="shop-detail-container">
             <div id="shop">
-                {/* Im not sure how to make it go back to the page it came from... Im assuming that javascript :)) */}
+                {/* Im not sure how to make it go back to the page it came from... Im assuming that is javascript :)) */}
                 <Link id="back-btn" to="/mens"><p>&lt; Back to results</p></Link>
                 <div id="shop-content" className="columns">
                     <div id="shop-img" className="one">

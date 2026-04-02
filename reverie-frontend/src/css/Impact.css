@@ -1,9 +1,4 @@
 /*Structure*/
-#nonprofit-highlights {
-    position: relative;
-    background: var(--shop-txt);
-    width: 100%;
-}
 #volunteer {
     background: var(--mens);
 }
@@ -43,12 +38,6 @@
     color:var(--shop-txt);
     background: var(--impact);
 }
-#nonprofit-highlights h1 {
-    color:var(--mens);
-    text-align: center;
-    margin: 0;
-    padding-top:30px;
-}
 #impact-title-txt {
   position: absolute;
   top: 50%;
@@ -59,15 +48,6 @@
 }
 #impact-title-txt h1 {
     font-size: 48px;
-}
-#nonprofit-txt {
-    padding: 0 50px 0 50px;
-    font-size: 20px;
-}
-.nonprofit-txt-block h3{
-    color: var(--mens);
-    padding-left:80px;
-    margin: 0 0 30px 0;
 }
 #contact-section-txt {
     color: var(--shop-txt);
@@ -94,7 +74,7 @@
   background: var(--overlay);
 }  
 
-#nonprofit-highlight-img {
+/* #nonprofit-highlight-img {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -113,10 +93,10 @@
     border-radius: 10px;
     margin: 20px;
 }
-.nonptofit-container {
+.nonprofit-container {
     position: relative;
     padding:0;
-}
+} */
 
 /*button*/
 
