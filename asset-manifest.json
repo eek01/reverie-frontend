@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/reverie-frontend/static/css/main.c2d3395f.css",
-    "main.js": "/reverie-frontend/static/js/main.389d0597.js",
+    "main.css": "/reverie-frontend/static/css/main.bd8c905e.css",
+    "main.js": "/reverie-frontend/static/js/main.2a7c4d88.js",
     "static/media/reverie5.jpg": "/reverie-frontend/static/media/reverie5.a8c56c7e8ca5f39dcf19.jpg",
     "static/media/pinkPuffer.png": "/reverie-frontend/static/media/pinkPuffer.84aa12da3cb17b334f2e.png",
     "static/media/reverie1.png": "/reverie-frontend/static/media/reverie1.060a4a617af161f06592.png",
@@ -26,11 +26,11 @@
     "static/media/flower200px.png": "/reverie-frontend/static/media/flower200px.f3d5b49a622e2551e49e.png",
     "static/media/ReverieDaydreamLogoResize.png": "/reverie-frontend/static/media/ReverieDaydreamLogoResize.050fe7b0b57c3b0a963e.png",
     "index.html": "/reverie-frontend/index.html",
-    "main.c2d3395f.css.map": "/reverie-frontend/static/css/main.c2d3395f.css.map",
-    "main.389d0597.js.map": "/reverie-frontend/static/js/main.389d0597.js.map"
+    "main.bd8c905e.css.map": "/reverie-frontend/static/css/main.bd8c905e.css.map",
+    "main.2a7c4d88.js.map": "/reverie-frontend/static/js/main.2a7c4d88.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2d3395f.css",
-    "static/js/main.389d0597.js"
+    "static/css/main.bd8c905e.css",
+    "static/js/main.2a7c4d88.js"
   ]
 }
