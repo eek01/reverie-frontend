@@ -24,7 +24,7 @@ const Mens = () => {
             <div id="shop-container">
                 <div id="mens-shop" className="columns">
                     {items.map((item)=>(
-                        <Link to="/shop">
+                        <Link to={`/shop/mens/${item._id}`}>
                         <Item 
                             key={item._id}
                             _id={item._id}
