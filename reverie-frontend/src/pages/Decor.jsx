@@ -1,15 +1,40 @@
 import "../css/Decor.css";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import Item from "../components/Item";
 import Search from "../components/Search";
 import {Link} from "react-router-dom";
 
 const Decor = () => {
+    const [items, setItems] = useState([]);
+
+    //after data has loaded
+    useEffect(()=>{
+        const loadItems = async() => {
+            //access json file w axios
+            const response = await axios.get("https://demo-backend-p8iz.onrender.com/api/decor");
+            setItems(response.data);
+        };
+        loadItems();
+    },[]);
+
     return (
+        <>
         <main id="home-content">
             <Search/>
             <div id="shop-container">
                 <div id="home-shop" className="columns">
-                    <Link to="/shop">
+                    {items.map((item)=>(
+                        <Link to="/shop">
+                        <Item 
+                            key={item._id}
+                            _id={item._id}
+                            title={item.title}
+                            price={"$"+item.price}
+                            main_img={"decor/"+item.img_name}/>
+                    </Link>
+                    ))}
+                    {/* <Link to="/shop">
                         <Item 
                             title="Ceramic Pitcher Vase"
                             price="$28"/>
@@ -37,7 +62,7 @@ const Decor = () => {
                         price="$17"/>
                     <Item 
                         title="Coffee Table Assortment"
-                        price="$79"/>
+                        price="$79"/> */}
                     <div id="bottom-search-sort-btn" className="columns">
                         <button>&lt;</button>
                         <p>1/10</p>
@@ -46,6 +71,7 @@ const Decor = () => {
                 </div>
             </div>
         </main>
+        </>
     );  
 };
 

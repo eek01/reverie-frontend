@@ -1,20 +1,39 @@
 import "../css/Mens.css";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import Item from "../components/Item";
 import Search from "../components/Search";
 import {Link} from "react-router-dom";
 
 const Mens = () => {
+    const [items, setItems] = useState([]);
+
+    //after data has loaded
+    useEffect(()=>{
+        const loadItems = async() => {
+            //access json file w axios
+            const response = await axios.get("https://demo-backend-p8iz.onrender.com/api/mens");
+            setItems(response.data);
+        };
+        loadItems();
+    },[]);
+
     return (
         <main id="mens-content">
             <Search/>
             <div id="shop-container">
                 <div id="mens-shop" className="columns">
-                    <Link to="/shop">
+                    {items.map((item)=>(
+                        <Link to="/shop">
                         <Item 
-                            title="Navy Windbreaker"
-                            price="$55"/>
+                            key={item._id}
+                            _id={item._id}
+                            title={item.title}
+                            price={"$"+item.price}
+                            main_img={"mens/"+item.img_name}/>
                     </Link>
-                    <Item 
+                    ))}
+                    {/* <Item 
                         title="White T-Shirt"
                         price="$15"/>
                     <Item 
@@ -37,7 +56,7 @@ const Mens = () => {
                         price="$19"/>
                     <Item 
                         title="V-Neck Sweater"
-                        price="$39"/>
+                        price="$39"/> */}
                     <div id="bottom-search-sort-btn" className="columns">
                     <button>&lt;</button>
                     <p>1/10</p>

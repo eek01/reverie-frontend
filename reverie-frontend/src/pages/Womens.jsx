@@ -30,7 +30,7 @@ const Womens = () => {
                             _id={item._id}
                             title={item.title}
                             price={"$"+item.price}
-                            main_img={item.img_name}/>
+                            main_img={"womens/"+item.img_name}/>
                     </Link>
                     ))}
                     {/* <Link to="/shop">
