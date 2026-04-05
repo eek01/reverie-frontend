@@ -15,6 +15,7 @@ id="shop-details
 }
 #shop-content {
     padding: 30px;
+    align-items: flex-start;
 }
 #shop-detail-container {
     border-bottom: 1px solid var(--border);
@@ -47,6 +48,7 @@ id="shop-details
 #shop-img {
     display: flex;
     justify-content: space-around;
+    padding:10px;
 }
 
 /*Navigation*/
