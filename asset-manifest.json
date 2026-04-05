@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/reverie-frontend/static/css/main.bd8c905e.css",
-    "main.js": "/reverie-frontend/static/js/main.2a7c4d88.js",
+    "main.css": "/reverie-frontend/static/css/main.7a3f6164.css",
+    "main.js": "/reverie-frontend/static/js/main.8ac4d587.js",
     "static/media/reverie5.jpg": "/reverie-frontend/static/media/reverie5.a8c56c7e8ca5f39dcf19.jpg",
     "static/media/pinkPuffer.png": "/reverie-frontend/static/media/pinkPuffer.84aa12da3cb17b334f2e.png",
     "static/media/reverie1.png": "/reverie-frontend/static/media/reverie1.060a4a617af161f06592.png",
@@ -19,18 +19,17 @@
     "static/media/reverie5_cropped.jpg": "/reverie-frontend/static/media/reverie5_cropped.33a04b13add78fed238c.jpg",
     "static/media/350.jpg": "/reverie-frontend/static/media/350.c6d4d33fedf3ba79c8ab.jpg",
     "static/media/reverie9.jpg": "/reverie-frontend/static/media/reverie9.85b96db3bdb4e7b3592a.jpg",
-    "static/media/mens1.jpg": "/reverie-frontend/static/media/mens1.93056af095ccdc1109a6.jpg",
     "static/media/reverie7.jpg": "/reverie-frontend/static/media/reverie7.d94a06bd743db3dab907.jpg",
     "static/media/mens3_cropped.jpg": "/reverie-frontend/static/media/mens3_cropped.cd7457cac4e8e5e8f667.jpg",
     "static/media/treesForTheFuture.jpg": "/reverie-frontend/static/media/treesForTheFuture.94468c98e4a2845c637a.jpg",
     "static/media/flower200px.png": "/reverie-frontend/static/media/flower200px.f3d5b49a622e2551e49e.png",
     "static/media/ReverieDaydreamLogoResize.png": "/reverie-frontend/static/media/ReverieDaydreamLogoResize.050fe7b0b57c3b0a963e.png",
     "index.html": "/reverie-frontend/index.html",
-    "main.bd8c905e.css.map": "/reverie-frontend/static/css/main.bd8c905e.css.map",
-    "main.2a7c4d88.js.map": "/reverie-frontend/static/js/main.2a7c4d88.js.map"
+    "main.7a3f6164.css.map": "/reverie-frontend/static/css/main.7a3f6164.css.map",
+    "main.8ac4d587.js.map": "/reverie-frontend/static/js/main.8ac4d587.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd8c905e.css",
-    "static/js/main.2a7c4d88.js"
+    "static/css/main.7a3f6164.css",
+    "static/js/main.8ac4d587.js"
   ]
 }
