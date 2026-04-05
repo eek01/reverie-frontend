@@ -139,6 +139,24 @@ const Slideshow = () => {
                                     <div id="shop-details">
                                         <h5>Details</h5>
                                         <h6>Product Code:{selectedItem._id}</h6>
+                                        <h5>Features:</h5>
+
+                                        <h6>{"- "+ selectedItem.features}</h6>
+                                        <h6>{selectedItem.category}</h6>
+                                        
+                                        {!(selectedItem.category === "decor") && (
+                                            <>
+                                            <h5>Care:</h5>
+                                            <h6>{"- "+ selectedItem.care}</h6>
+                                            </>
+                                        )}
+
+                                        {!(selectedItem.category === "decor") && (
+                                            <>
+                                            <h5>Size + Fit:</h5>
+                                            <h6>- Model wears size {selectedItem.size_fit?.[0]}, Model height is {selectedItem.size_fit?.[1]}</h6>
+                                            </>
+                                        )}
                                     </div>
                                 </div>
                             </div>

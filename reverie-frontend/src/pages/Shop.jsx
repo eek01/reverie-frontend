@@ -26,9 +26,9 @@ const Shop = () => {
                 img_name={`${category}/`+items.img_name}
                 title={items.title}
                 price={"$"+items.price}
-                // features={items.features[0]}
-                // care={items.care[0]} 
-                // size={items.size}
+                features={items.features}
+                care={items.care} 
+                size={items.size_fit}
                 />
             <section id="quick-shop">
                 <h1>You May Also Like</h1>
