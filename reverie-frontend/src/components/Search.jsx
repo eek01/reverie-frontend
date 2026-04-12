@@ -17,11 +17,12 @@ const Search = () => {
                     <div></div>
                     <div></div>
                 </div>
+                 {/* up arrow = &#8963, down arrow = &#8964 */}
                 <ul id="search-bar-items" className={menuOpen?"columns":"hide-small"}>
-                    <li>Size ⌄</li>
-                    <li>Color ⌄</li>
-                    <li>Price ⌄</li>
-                    <li>Brand ⌄</li>
+                    <li>Size &#8964;</li>
+                    <li>Color &#8964;</li>
+                    <li>Price &#8964;</li>
+                    <li>Brand &#8964;</li>
                 </ul>
             </div>
             <div id="womens-search-sort" className="columns">

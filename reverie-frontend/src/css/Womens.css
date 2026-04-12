@@ -43,3 +43,18 @@ id="bottom-search-sort-btn
     color: var(--border)
 }
 
+#addItem {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 30px;
+    left: 20px;
+    color: var(--shop-txt);
+    border: 2px solid var(--border);
+    border-radius: 4px;
+    background: var(--main-header);
+}
+#addItem:hover{
+    cursor: pointer;
+    background: var(--mens);
+}

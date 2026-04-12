@@ -19,7 +19,6 @@ id="shop-details
 }
 #shop-detail-container {
     border-bottom: 1px solid var(--border);
-
 }
 
 /*typography*/
@@ -49,6 +48,9 @@ id="shop-details
     display: flex;
     justify-content: space-around;
     padding:10px;
+}
+#shop-img img {
+    max-height: 500px;
 }
 
 /*Navigation*/

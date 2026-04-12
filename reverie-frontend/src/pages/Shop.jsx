@@ -11,7 +11,9 @@ const Shop = () => {
     useEffect(()=>{
         const loadItems = async() => {
             //access json file w axios
-            const response = await axios.get(`https://demo-backend-p8iz.onrender.com/api/${category}/${id}`);
+            const urlRender = `https://demo-backend-p8iz.onrender.com/api/${category}/${id}`;
+            const urlLocal = `http://localhost:3002/api/${category}/${id}`;
+            const response = await axios.get(urlRender);
             setItems(response.data);
         };
         loadItems();
@@ -20,10 +22,10 @@ const Shop = () => {
     return (
         <main>
             <ShopInfo 
-                category={`${category}`}
+                category={items.category}
                 key={items._id}
                 _id={items._id}
-                img_name={`${category}/`+items.img_name}
+                img_name={items.img_name}
                 title={items.title}
                 price={"$"+items.price}
                 features={items.features}

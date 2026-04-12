@@ -4,33 +4,58 @@ import axios from "axios";
 import Item from "../components/Item";
 import Search from "../components/Search";
 import {Link} from "react-router-dom";
+import AddDialog from "../components/AddDialog";
+
+//things to change
+//make one big json file w items (add category)
+
+
 
 const Womens = () => {
     const [items, setItems] = useState([]);
+    const [showAddDialog, setShowAddDialog] = useState(false);
 
     //after data has loaded
     useEffect(()=>{
         const loadItems = async() => {
             //access json file w axios
-            const response = await axios.get("https://demo-backend-p8iz.onrender.com/api/womens");
+            const urlRender = "https://demo-backend-p8iz.onrender.com/api/items";
+            const urlLocal = "http://localhost:3002/";
+            const response = await axios.get(urlRender);
             setItems(response.data);
         };
         loadItems();
     },[]);
+
+    const openAddDialog = () => {
+        setShowAddDialog(true);
+    };
+
+    const closeAddDialog = () => {
+        setShowAddDialog(false);
+    };
+
+    const addItemToList = (item) => {
+        //adds new item to list of items
+        setItems((items)=>[...items,item]);
+    };
 
     return (
         <main id="womens">
             <Search/> 
             <div id="womens-shop-container">
                 <div id="womens-shop" className="columns">
-                    {items.map((item)=>(
-                        <Link to={`/shop/womens/${item._id}`}>
+                    {items
+                    .filter((item) => item.category === "womens")
+                    .map((item)=>(
+                        <Link to={`/shop/items/${item._id}`}>
                         <Item 
                             key={item._id}
                             _id={item._id}
                             title={item.title}
                             price={"$"+item.price}
-                            main_img={"womens/"+item.img_name}/>
+                            main_img={item.img_name}
+                            category={item.category}/>
                     </Link>
                     ))}
                     {/* <Link to="/shop">
@@ -62,6 +87,13 @@ const Womens = () => {
                     <Item 
                         title="Open Back Button-Down"
                         price="$17"/> */}
+                        <p></p>
+                    <button id="addItem" onClick={openAddDialog}>+</button>
+                    {showAddDialog?(<AddDialog 
+                                        closeAddDialog={closeAddDialog}
+                                        addItemToList={addItemToList}
+                                        />):("")}
+                    
                     <div id="bottom-search-sort-btn" className="columns">
                     <button>&lt;</button>
                     <p>1/10</p>

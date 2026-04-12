@@ -1,0 +1,14 @@
+#addItemForm {
+    color:var(--shop-txt);
+}
+
+#dialogTitle {
+    display: flex;
+}
+#dialogTitle label{
+    padding-right: 5px;
+}
+
+#img-prev-section img {
+    max-width: 200px;
+}

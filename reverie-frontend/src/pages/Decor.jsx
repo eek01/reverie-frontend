@@ -4,19 +4,35 @@ import axios from "axios";
 import Item from "../components/Item";
 import Search from "../components/Search";
 import {Link} from "react-router-dom";
+import AddDialog from "../components/AddDialog";
 
 const Decor = () => {
     const [items, setItems] = useState([]);
+    const [showAddDialog, setShowAddDialog] = useState(false);
+
 
     //after data has loaded
     useEffect(()=>{
         const loadItems = async() => {
             //access json file w axios
-            const response = await axios.get("https://demo-backend-p8iz.onrender.com/api/decor");
+            const response = await axios.get("https://demo-backend-p8iz.onrender.com/api/items");
             setItems(response.data);
         };
         loadItems();
     },[]);
+
+    const openAddDialog = () => {
+        setShowAddDialog(true);
+    };
+
+    const closeAddDialog = () => {
+        setShowAddDialog(false);
+    };
+
+    const addItemToList = (item) => {
+        //adds new item to list of items
+        setItems((items)=>[...items,item]);
+    };
 
     return (
         <>
@@ -24,14 +40,17 @@ const Decor = () => {
             <Search/>
             <div id="shop-container">
                 <div id="home-shop" className="columns">
-                    {items.map((item)=>(
-                        <Link to={`/shop/decor/${item._id}`}>
+                    {items
+                    .filter((item) => item.category === "decor")
+                    .map((item)=>(
+                        <Link to={`/shop/items/${item._id}`}>
                         <Item 
                             key={item._id}
                             _id={item._id}
                             title={item.title}
                             price={"$"+item.price}
-                            main_img={"decor/"+item.img_name}/>
+                            main_img={item.img_name}
+                            category={item.category}/>
                     </Link>
                     ))}
                     {/* <Link to="/shop">
@@ -63,6 +82,12 @@ const Decor = () => {
                     <Item 
                         title="Coffee Table Assortment"
                         price="$79"/> */}
+                        <p></p>
+                    <button id="addItem" onClick={openAddDialog}>+</button>
+                    {showAddDialog?(<AddDialog 
+                                        closeAddDialog={closeAddDialog}
+                                        addItemToList={addItemToList}
+                                        />):("")}
                     <div id="bottom-search-sort-btn" className="columns">
                         <button>&lt;</button>
                         <p>1/10</p>

@@ -15,6 +15,7 @@ const Slideshow = () => {
         loadItems();
     },[]);
 
+    //pass functions through components as props!!
     const [showDialog, setShowDialog] = useState(false);
     const [selectedItem, setSelectedItem] = useState(null);
 

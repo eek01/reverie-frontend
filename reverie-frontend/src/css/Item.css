@@ -6,6 +6,8 @@
 /*images*/
 .shop-section img {
     width: 100%;
+    max-width: 330px;
+    max-height: 500px;
     border-radius: 10px;
 }
 

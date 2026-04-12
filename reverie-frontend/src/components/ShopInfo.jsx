@@ -12,20 +12,24 @@ const ShopInfo = (props) => {
                 <Link id="back-btn" to="/mens"><p>&lt; Back to results</p></Link>
                 <div id="shop-content" className="columns">
                     <div id="shop-img" className="one">
-                        <img src={`https://demo-backend-p8iz.onrender.com/images/${props.img_name}`}/>
+                        <img src={`https://demo-backend-p8iz.onrender.com/images/${props.category}/${props.img_name}`}/>
                     </div>
                     <div id="shop-description" className="one">
                         <h3>{props.title}</h3>
                         <h5>{props.price}</h5>
                         <hr/>
-                        <p>Size</p>
-                        <div id="size-btn">
-                            <div><h6>S</h6></div>
-                            <div><h6>M</h6></div>
-                            <div><h6>L</h6></div>
-                            <div><h6>XL</h6></div>
-                            <div><h6>XXL</h6></div>
-                        </div>
+                        {!(props.category === "decor") && (
+                                <>
+                                <p>Size</p>
+                                <div id="size-btn">
+                                    <div><h6>S</h6></div>
+                                    <div><h6>M</h6></div>
+                                    <div><h6>L</h6></div>
+                                    <div><h6>XL</h6></div>
+                                    <div><h6>XXL</h6></div>
+                                </div>
+                                </>
+                            )}
                         <button id="buy-now-btn">Buy Now</button>
                         <hr/>
                         <div id="shop-details">
