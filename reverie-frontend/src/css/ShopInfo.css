@@ -20,6 +20,9 @@ id="shop-details
 #shop-detail-container {
     border-bottom: 1px solid var(--border);
 }
+#icons {
+    justify-content: space-between;
+}
 
 /*typography*/
 #shop-description {

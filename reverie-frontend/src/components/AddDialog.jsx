@@ -4,6 +4,7 @@ import { useState } from "react";
 const AddDialog = (props) => {
     const [result, setResult] = useState("");
     const [prevSrc, setPrevSrc] = useState("");
+    const [features, setFeatures] = useState([""]);
 
     const uploadImage = (e) => {
         setPrevSrc(URL.createObjectURL(e.target.files[0]));
@@ -15,6 +16,11 @@ const AddDialog = (props) => {
 
         const formData = new FormData(e.target);
         console.log(...formData);
+
+        formData.delete("features");
+        features.forEach(f => {
+            if(f.trim() !== "") formData.append("features", f);
+        });
 
         const postURLLocal = "http://localhost:3002/api/items";
         const postURLRender = "https://demo-backend-p8iz.onrender.com/api/items";
@@ -33,7 +39,27 @@ const AddDialog = (props) => {
         }
     }
 
+    // gemini ai helped with this code
+    const featuresChange = (index, value) => {
+        const newFeatures = [...features];
+        newFeatures[index] = value;
+        setFeatures(newFeatures);
+    };
+
+    const newFeature = (e) => {
+        e.preventDefault();
+        setFeatures([...features, ""]);
+    }
+
+    const removeFeature = (index) => {
+        const newFeatures = features.filter((_, i) => i !== index);
+        setFeatures(newFeatures);
+    };
+
     return(
+        // line everything up
+        // dont have white space
+        // maybe have img in white space on the right
         <div id="add-dialog" className="w3-modal">
         <div className="w3-modal-content">
             <div className="w3-container">
@@ -45,16 +71,30 @@ const AddDialog = (props) => {
             </span>
             <form id="addItemForm" onSubmit={addItemToServer}>
                 <p id="dialogTitle">
-                    <label htmlFor="title">Item Name: </label>
-                    <input type="text" id="title" name="title" required min="3" />
+                    <label htmlFor="form_title">Item: </label>
+                    <input type="text" id="form_title" name="title" required min="3" />
                 </p>
-                <p id="dialogPrice">
-                    <label htmlFor="price">Price: </label>
-                    <input type="number" id="price" name="price" required />
+                <p id="dialogPrice" className="columns">
+                    <label htmlFor="price" >Price: </label>
+                    <input type="number" id="price" name="price" required/>
                 </p>
                 <p id="dialogFeatures">
                     <label htmlFor="features">Features: </label>
-                    <input type="text" id="features" name="features" required />
+                    <div>
+                        {features.map((feature, index) => (
+                        <div key={index} className="columns"> 
+                            <input type="text" className="features" name="features" required onChange={(e) => featuresChange(index, e.target.value)}/>
+                            {index > 0 && (
+                                <button type="button" onClick={() => removeFeature(index)}>
+                                    &times;
+                                </button>
+                            )}
+                        </div>
+                    ))}
+                    </div>
+                    <button id="" type="button" onClick={newFeature}>
+                        +
+                    </button>
                 </p>
                 <p id="dialogCare">
                     <label htmlFor="care">Care: </label>
@@ -66,7 +106,12 @@ const AddDialog = (props) => {
                 </p>
                 <p id="dialogCat">
                     <label htmlFor="category">Category: </label>
-                    <input type="text" id="category" name="category" required min="4" />
+                    <select id="category" name="category" required >
+                        <option value="">Select Category</option>
+                        <option value="womens">Womens</option>
+                        <option value="mens">Mens</option>
+                        <option value="decor">Decor</option>
+                    </select>
                 </p>
                 <section id="dialogImg">
                     <p id="img-prev-section">

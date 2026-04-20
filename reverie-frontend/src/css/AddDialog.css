@@ -2,13 +2,22 @@
     color:var(--shop-txt);
 }
 
-#dialogTitle {
+#addItemForm p label {
+    width: 120px;
+    display: block;
+}
+#addItemForm p {
     display: flex;
 }
-#dialogTitle label{
-    padding-right: 5px;
+#addItemForm p input {
+    width:200px;
 }
 
 #img-prev-section img {
     max-width: 200px;
+}
+
+/*button*/
+#add-feature-btn {
+    max-height: 22px;
 }

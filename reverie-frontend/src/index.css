@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Galindo&display=swap');
+
 :root {
     --main-header: #FFF2F8;
     --footer: #0571D3;
@@ -43,5 +44,11 @@ img {
   }
   .three {
     flex:3;
+  }
+  .four {
+    flex:4;
+  }
+  .five {
+    flex:5;
   }
 }

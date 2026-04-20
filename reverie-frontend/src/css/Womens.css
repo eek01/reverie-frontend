@@ -47,8 +47,8 @@ id="bottom-search-sort-btn
     position: absolute;
     display: flex;
     align-items: center;
-    bottom: 30px;
-    left: 20px;
+    top: 30px;
+    right: 20px;
     color: var(--shop-txt);
     border: 2px solid var(--border);
     border-radius: 4px;

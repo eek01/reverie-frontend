@@ -40,6 +40,11 @@ const Decor = () => {
             <Search/>
             <div id="shop-container">
                 <div id="home-shop" className="columns">
+                    <button id="addItem" onClick={openAddDialog}>+</button>
+                    {showAddDialog?(<AddDialog 
+                                        closeAddDialog={closeAddDialog}
+                                        addItemToList={addItemToList}
+                                        />):("")}
                     {items
                     .filter((item) => item.category === "decor")
                     .map((item)=>(
@@ -82,12 +87,6 @@ const Decor = () => {
                     <Item 
                         title="Coffee Table Assortment"
                         price="$79"/> */}
-                        <p></p>
-                    <button id="addItem" onClick={openAddDialog}>+</button>
-                    {showAddDialog?(<AddDialog 
-                                        closeAddDialog={closeAddDialog}
-                                        addItemToList={addItemToList}
-                                        />):("")}
                     <div id="bottom-search-sort-btn" className="columns">
                         <button>&lt;</button>
                         <p>1/10</p>

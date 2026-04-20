@@ -1,0 +1,12 @@
+/* buttons */
+#no-delete-btn, #yes-delete-btn {
+    background: var(--mens);
+    color:var(--shop-txt);
+    padding:10px;
+    border: 2px solid var(--shop-txt);
+    border-radius: 10px;
+    margin-top: 15px;
+}
+#yes-delete-btn {
+    margin-left: 15px;
+}

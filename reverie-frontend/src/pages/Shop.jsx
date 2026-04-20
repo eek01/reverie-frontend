@@ -27,7 +27,7 @@ const Shop = () => {
                 _id={items._id}
                 img_name={items.img_name}
                 title={items.title}
-                price={"$"+items.price}
+                price={items.price}
                 features={items.features}
                 care={items.care} 
                 size={items.size_fit}
