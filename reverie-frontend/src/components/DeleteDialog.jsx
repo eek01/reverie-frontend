@@ -4,6 +4,7 @@ import "../css/DeleteDialog.css";
 const DeleteDialog = (props) => {
     const [result, setResult] = useState("");
     const deleteURLRender = "https://demo-backend-p8iz.onrender.com/api/items";
+    const deleteURLLocal = "http://localhost:3002/api/items";
 
     const deleteItem = async() => {
         setResult("Sending");

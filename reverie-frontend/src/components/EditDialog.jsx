@@ -14,7 +14,7 @@ const EditDialog = (props) => {
     const onSubmit = async(e) => {
         e.preventDefault();
         setResult("...sending");
-        const postURLLocal = "";
+        const postURLLocal = "http://localhost:3002/api/items";
         const postURLRender = "https://demo-backend-p8iz.onrender.com/api/items";
 
         const formData = new FormData(e.target);

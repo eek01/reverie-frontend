@@ -19,7 +19,7 @@ const AddDialog = (props) => {
 
         formData.delete("features");
         features.forEach(f => {
-            if(f.trim() !== "") formData.append("features", f);
+            if(f.trim() !== "") formData.append("features[]", f);
         });
 
         const postURLLocal = "http://localhost:3002/api/items";
@@ -82,17 +82,17 @@ const AddDialog = (props) => {
                     <label htmlFor="features">Features: </label>
                     <div>
                         {features.map((feature, index) => (
-                        <div key={index} className="columns"> 
+                        <div key={index} id="features-div" className="columns"> 
                             <input type="text" className="features" name="features" required onChange={(e) => featuresChange(index, e.target.value)}/>
                             {index > 0 && (
-                                <button type="button" onClick={() => removeFeature(index)}>
+                                <button type="button" id="remove-feat-btn" onClick={() => removeFeature(index)}>
                                     &times;
                                 </button>
                             )}
                         </div>
                     ))}
                     </div>
-                    <button id="" type="button" onClick={newFeature}>
+                    <button id="add-feature-btn" type="button" onClick={newFeature}>
                         +
                     </button>
                 </p>

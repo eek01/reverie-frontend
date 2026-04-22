@@ -20,7 +20,7 @@ const Womens = () => {
         const loadItems = async() => {
             //access json file w axios
             const urlRender = "https://demo-backend-p8iz.onrender.com/api/items";
-            const urlLocal = "http://localhost:3002/";
+            const urlLocal = "http://localhost:3002/api/items";
             const response = await axios.get(urlRender);
             setItems(response.data);
         };
