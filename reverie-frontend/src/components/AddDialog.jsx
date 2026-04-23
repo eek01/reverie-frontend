@@ -5,6 +5,7 @@ const AddDialog = (props) => {
     const [result, setResult] = useState("");
     const [prevSrc, setPrevSrc] = useState("");
     const [features, setFeatures] = useState([""]);
+    const [category, setCategory] = useState(props.category || "");
 
     const uploadImage = (e) => {
         setPrevSrc(URL.createObjectURL(e.target.files[0]));
@@ -96,17 +97,21 @@ const AddDialog = (props) => {
                         +
                     </button>
                 </p>
-                <p id="dialogCare">
-                    <label htmlFor="care">Care: </label>
-                    <input type="text" id="care" name="care" required />
-                </p>
-                <p id="dialogFit">
-                    <label htmlFor="size_fit">Size and Fit: </label>
-                    <input type="text" id="size_fit" name="size_fit" required />
-                </p>
+                 {(category === "mens" || category === "womens") && (
+                    <>
+                        <p id="dialogCare">
+                            <label htmlFor="care">Care: </label>
+                            <input type="text" id="care" name="care" defaultValue={props.care} required />
+                        </p>
+                        <p id="dialogFit">
+                            <label htmlFor="size_fit">Size and Fit: </label>
+                            <input type="text" id="size_fit" name="size_fit" defaultValue={props.size} required />
+                        </p>
+                    </>
+                )}
                 <p id="dialogCat">
                     <label htmlFor="category">Category: </label>
-                    <select id="category" name="category" required >
+                    <select id="category" name="category" required value={category} onChange={(e) => setCategory(e.target.value)}>
                         <option value="">Select Category</option>
                         <option value="womens">Womens</option>
                         <option value="mens">Mens</option>
