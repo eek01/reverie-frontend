@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/reverie-frontend/static/css/main.b2ba5fda.css",
-    "main.js": "/reverie-frontend/static/js/main.72083bbf.js",
+    "main.js": "/reverie-frontend/static/js/main.4c672fc1.js",
     "static/media/reverie5.jpg": "/reverie-frontend/static/media/reverie5.a8c56c7e8ca5f39dcf19.jpg",
     "static/media/pinkPuffer.png": "/reverie-frontend/static/media/pinkPuffer.84aa12da3cb17b334f2e.png",
     "static/media/reverie1.png": "/reverie-frontend/static/media/reverie1.060a4a617af161f06592.png",
@@ -26,10 +26,10 @@
     "static/media/ReverieDaydreamLogoResize.png": "/reverie-frontend/static/media/ReverieDaydreamLogoResize.050fe7b0b57c3b0a963e.png",
     "index.html": "/reverie-frontend/index.html",
     "main.b2ba5fda.css.map": "/reverie-frontend/static/css/main.b2ba5fda.css.map",
-    "main.72083bbf.js.map": "/reverie-frontend/static/js/main.72083bbf.js.map"
+    "main.4c672fc1.js.map": "/reverie-frontend/static/js/main.4c672fc1.js.map"
   },
   "entrypoints": [
     "static/css/main.b2ba5fda.css",
-    "static/js/main.72083bbf.js"
+    "static/js/main.4c672fc1.js"
   ]
 }
